@@ -5,8 +5,8 @@ Tema número: 9
 Tema: Academia de cursos cortos
 Empresa: Aula Ágil
 
-Repositorio: https://github.com/USUARIO/evaluacion2-maquetacion
-Sitio publicado: https://USUARIO.github.io/evaluacion2-maquetacion/
+Repositorio: https://github.com/juan-manuel-ortiz/evaluacion2-maquetacion
+Sitio publicado: https://juan-manuel-ortiz.github.io/evaluacion2-maquetacion/
 
 ## Resultado del verificador
 
@@ -16,4 +16,5 @@ Pega aquí las dos últimas líneas de `node verificar-evaluacion.js --sin-api`:
 ```
 
 ## Qué me faltó o qué haría distinto
+Mas adelante, cambiaria la imagen de ejemplo por una imagen diferente para cada curso, tambien revisaria el diseño en mas tamaños de pantalla para seguir mejorando la página
 
