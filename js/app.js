@@ -34,16 +34,42 @@ const estado = {
 // descriptivo, card-body, un h3 con clase card-title y el nombre,
 // un badge con la categoría, la descripción, el valor de
 // item[configuracion.campoOrden] con su etiqueta, y tus 2 campos propios.
-function crearCard(item) {
 
+function crearCard(item) {
+  return `
+    <div class="col">
+      <article class="card rounded-4 shadow-sm h-100">
+        <img src="${item.imagen}" class="card-img-top" alt="Curso de ${item.nombre}">
+
+        <div class="card-body">
+          <h3 class="card-title h5">${item.nombre}</h3>
+
+          <span class="badge bg-success mb-2">${item.categoria}</span>
+
+          <p class="card-text">${item.descripcion}</p>
+
+          <p class="mb-1">Horas: ${item.horas}</p>
+          <p class="mb-1">Nivel: ${item.nivel}</p>
+          <p class="mb-0">Modalidad: ${item.modalidad}</p>
+        </div>
+      </article>
+    </div>
+  `;
 }
+
 
 // TODO: devuelve el HTML de TODAS las tarjetas de la lista (map + join).
 // Si la lista está vacía, devuelve un mensaje (por ejemplo un <p>) que
 // diga que no hay resultados.
-function generarHTML(lista) {
 
+function generarHTML(lista) {
+  if (lista.length === 0) {
+    return '<p class="text-center">No hay resultados para tu búsqueda.</p>';
+  }
+
+  return lista.map(item => crearCard(item)).join('');
 }
+
 
 /* ---------------------------------------------------------------
  * Issue #4 - Filtrar, buscar y ordenar
@@ -84,9 +110,15 @@ function aplicarFiltros(lista, estadoActual) {
 // TODO: calcula la lista con aplicarFiltros(items, estado), pinta el
 // resultado en #catalogo con innerHTML y actualiza #contador
 // (por ejemplo "Mostrando 5 de 12 resultados").
-function actualizarVista() {
 
+function actualizarVista() {
+  const catalogo = document.getElementById('catalogo');
+  const contador = document.getElementById('contador');
+
+  catalogo.innerHTML = generarHTML(items);
+  contador.textContent = `Mostrando ${items.length} de ${items.length} resultados`;
 }
+
 
 // TODO: conecta los eventos y pinta por primera vez.
 //   click  en cada botón con data-categoria: actualiza estado.categoria
@@ -94,9 +126,11 @@ function actualizarVista() {
 //   input  en #buscador: actualiza estado.texto
 //   change en #orden: actualiza estado.orden
 // Después de cada cambio llama a actualizarVista().
-function iniciar() {
 
+function iniciar() {
+  actualizarVista();
 }
+
 
 // No cambies estas líneas: así el archivo también carga en el verificador,
 // donde no existe document.
