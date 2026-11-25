@@ -10,9 +10,11 @@ Sitio publicado: https://juan-manuel-ortiz.github.io/evaluacion2-maquetacion/
 
 ## Resultado del verificador
 
-Pega aquí las dos últimas líneas de `node verificar-evaluacion.js --sin-api`:
 
 ```
+Puntos automáticos: 49 de 54
+Nota automática: 4.08 de 4.5 (la sustentación vale 0.5)
+
 ```
 
 ## Qué me faltó o qué haría distinto
