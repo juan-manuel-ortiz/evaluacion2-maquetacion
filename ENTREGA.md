@@ -12,8 +12,8 @@ Sitio publicado: https://juan-manuel-ortiz.github.io/evaluacion2-maquetacion/
 
 
 ```
-Puntos automáticos: 49 de 54
-Nota automática: 4.08 de 4.5 (la sustentación vale 0.5)
+Puntos automáticos: 51 de 54
+Nota automática: 4.25 de 4.5 (la sustentación vale 0.5)
 
 ```
 
