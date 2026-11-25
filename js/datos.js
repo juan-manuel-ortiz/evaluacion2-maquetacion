@@ -26,22 +26,133 @@
  * Puedes usar img/placeholder.svg mientras consigues imágenes.
  */
 
+
 const configuracion = {
-  titulo: '',
-  campoOrden: '',
-  etiquetaValor: ''
+  titulo: 'Aula Ágil',
+  campoOrden: 'horas',
+  etiquetaValor: 'Horas'
 };
 
 const items = [
-  // Ejemplo de la forma (tema Mercado campesino). Bórralo y escribe los tuyos.
-  // {
-  //   id: 1,
-  //   nombre: 'Mora de Castilla',
-  //   categoria: 'frutas',
-  //   descripcion: 'Mora fresca de las veredas de Santa Rosa de Cabal.',
-  //   imagen: 'img/placeholder.svg',
-  //   precio: 6500,
-  //   unidad: 'libra',
-  //   municipio: 'Santa Rosa de Cabal'
-  // },
+  {
+    id: 1,
+    nombre: 'HTML y CSS desde cero',
+    categoria: 'programacion',
+    descripcion: 'Crea tu primera página web.',
+    imagen: 'img/placeholder.svg',
+    horas: 40,
+    nivel: 'básico',
+    modalidad: 'presencial'
+  },
+  {
+    id: 2,
+    nombre: 'JavaScript práctico',
+    categoria: 'programacion',
+    descripcion: 'Da interactividad a tus páginas.',
+    imagen: 'img/placeholder.svg',
+    horas: 60,
+    nivel: 'intermedio',
+    modalidad: 'virtual'
+  },
+  {
+    id: 3,
+    nombre: 'Python para datos',
+    categoria: 'programacion',
+    descripcion: 'Analiza datos con Python.',
+    imagen: 'img/placeholder.svg',
+    horas: 48,
+    nivel: 'intermedio',
+    modalidad: 'virtual'
+  },
+  {
+    id: 4,
+    nombre: 'Diseño gráfico básico',
+    categoria: 'diseno',
+    descripcion: 'Fundamentos de color, forma y tipografía.',
+    imagen: 'img/placeholder.svg',
+    horas: 32,
+    nivel: 'básico',
+    modalidad: 'presencial'
+  },
+  {
+    id: 5,
+    nombre: 'Figma para interfaces',
+    categoria: 'diseno',
+    descripcion: 'Diseña pantallas de apps y sitios.',
+    imagen: 'img/placeholder.svg',
+    horas: 24,
+    nivel: 'intermedio',
+    modalidad: 'virtual'
+  },
+  {
+    id: 6,
+    nombre: 'Fotografía con celular',
+    categoria: 'diseno',
+    descripcion: 'Mejores fotos para redes sociales.',
+    imagen: 'img/placeholder.svg',
+    horas: 16,
+    nivel: 'básico',
+    modalidad: 'presencial'
+  },
+  {
+    id: 7,
+    nombre: 'Inglés conversacional',
+    categoria: 'idiomas',
+    descripcion: 'Habla con confianza en situaciones diarias.',
+    imagen: 'img/placeholder.svg',
+    horas: 80,
+    nivel: 'intermedio',
+    modalidad: 'presencial'
+  },
+  {
+    id: 8,
+    nombre: 'Inglés para entrevistas',
+    categoria: 'idiomas',
+    descripcion: 'Prepárate para entrevistas en inglés.',
+    imagen: 'img/placeholder.svg',
+    horas: 20,
+    nivel: 'avanzado',
+    modalidad: 'virtual'
+  },
+  {
+    id: 9,
+    nombre: 'Portugués básico',
+    categoria: 'idiomas',
+    descripcion: 'Primeros pasos en portugués.',
+    imagen: 'img/placeholder.svg',
+    horas: 40,
+    nivel: 'básico',
+    modalidad: 'virtual'
+  },
+  {
+    id: 10,
+    nombre: 'Excel intermedio',
+    categoria: 'ofimatica',
+    descripcion: 'Fórmulas, tablas dinámicas y gráficos.',
+    imagen: 'img/placeholder.svg',
+    horas: 30,
+    nivel: 'intermedio',
+    modalidad: 'presencial'
+  },
+  {
+    id: 11,
+    nombre: 'Word profesional',
+    categoria: 'ofimatica',
+    descripcion: 'Documentos con estilos y tablas.',
+    imagen: 'img/placeholder.svg',
+    horas: 16,
+    nivel: 'básico',
+    modalidad: 'virtual'
+  },
+  {
+    id: 12,
+    nombre: 'Presentaciones efectivas',
+    categoria: 'ofimatica',
+    descripcion: 'Diapositivas claras y atractivas.',
+    imagen: 'img/placeholder.svg',
+    horas: 12,
+    nivel: 'básico',
+    modalidad: 'virtual'
+  }
 ];
+
